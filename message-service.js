@@ -3,7 +3,7 @@ export default class MessageService {
 	getAllMessages() {
 		const request = new XMLHttpRequest();
 
-		return new Promise(function (resolve, rejcect) {
+		return new Promise(function (resolve, reject) {
 			
 			request.onload = function() {
 				if(request.status >= 200 && request.status < 300){
